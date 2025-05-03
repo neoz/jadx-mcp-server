@@ -62,13 +62,16 @@ The following MCP tools are available:
 - `fetch_current_class()` — Get the class name and full source of selected class
 - `get_selected_text()` — Get currently selected text
 - `get_all_classes()` — List all classes in the project
-- `get_class_source(class_name)` — Get full source of a given class
-- `get_method_by_name(class_name, method_name)` — Fetch a method’s source
-- `search_method_by_name(method_name)` — Search method across classes
-- `get_methods_of_class(class_name)` — List methods in a class
-- `get_fields_of_class(class_name)` — List fields in a class
-- `get_method_code(class_name, method_name)` — Alias for `get_method_by_name` //to be removed
-- `get_smali_of_class(class_name)` — Fetch smali of class
+- `get_class_source()` — Get full source of a given class
+- `get_method_by_name()` — Fetch a method’s source
+- `search_method_by_name()` — Search method across classes
+- `get_methods_of_class()` — List methods in a class
+- `get_fields_of_class()` — List fields in a class
+- `get_smali_of_class()` — Fetch smali of class
+- `get_main_activity_class()` — Fetch main activity from jadx mentioned in AndroidManifest.xml file. 
+- `get_main_application_classes_code()` — Fetch all the main application classes' code based on the package name defined in the AndroidManifest.xml.
+- `get_main_application_classes_names()` — Fetch all the main application classes' names based on the package name defined in the AndroidManifest.xml.
+- `get_android_manifest()` — Retrieve and return the AndroidManifest.xml content.
 
 ---
 
@@ -135,17 +138,19 @@ The following MCP tools are available:
 
 ## 🛣️ Future Roadmap
 
- - Add Support for apktool
+- [x] Add Support for apktool
 
- - Add support for hermes code (ReactNative Application)
+ - [ ] Add support for hermes code (ReactNative Application)
 
- - Add more useful MCP Tools
+ - [ ] Add more useful MCP Tools
 
- - Make LLM be able to modify code on JADX
+ - [ ] Make LLM be able to modify code on JADX
 
- - Add prompts templates, give llm access to Android APK Files as Resources
+ - [ ] Add prompts templates, give llm access to Android APK Files as Resources
 
- - **END-GOAL** : Make all android reverse engineering and APK modification tools Connect with single MCP server to make reverse engineering apk files as easy as possible purely from vibes.
+ - [ ] Build MCP Client to support Local LLM
+
+ - [ ] **END-GOAL** : Make all android reverse engineering and APK modification tools Connect with single MCP server to make reverse engineering apk files as easy as possible purely from vibes.
 
 ## NOTE For Contributors
 
