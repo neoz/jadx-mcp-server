@@ -18,11 +18,16 @@
 
 <!-- MCP (Model Context Protocol) server that connects to a custom plugin of [JADX](https://github.com/skylot/jadx) called [JADX-AI-MCP](https://github.com/zinja-coder/jadx-ai-mcp) and provides reverse engineering capabilities directly to local LLMs like Claude Desktop.-->
 
-![jadx-mcp-banner](static/image.png)
+
+<div align="center">
+    <img alt="banner" height="480px" widht="620px" src="static/image.png">
+</div>
+
+<!-- ![jadx-mcp-banner](static/image.png) -->
 
 --- 
 
-# Download now: https://github.com/zinja-coder/jadx-ai-mcp/releases
+#### Download now: https://github.com/zinja-coder/jadx-ai-mcp/releases
 
 ---
 
@@ -37,13 +42,23 @@
 
 Think: "Decompile → Context-Aware Code Review → AI Recommendations" — all in real time.
 
-Watch the demo!
+Watch the demos!
 
-
+- **Perform quick analysis**
+  
 https://github.com/user-attachments/assets/b65c3041-fde3-4803-8d99-45ca77dbe30a
+
+- **Quickly find vulnerabilities**
 
 https://github.com/user-attachments/assets/c184afae-3713-4bc0-a1d0-546c1f4eb57f
 
+- **Multiple AI Agents Support**
+
+https://github.com/user-attachments/assets/6342ea0f-fa8f-44e6-9b3a-4ceb8919a5b0
+
+- **Analyze The APK Resources**
+
+https://github.com/user-attachments/assets/f42d8072-0e3e-4f03-93ea-121af4e66eb1
 
 It is combination of two tools:
 1. [JADX-AI-MCP](https://github.com/zinja-coder/jadx-ai-mcp)
@@ -51,9 +66,10 @@ It is combination of two tools:
 
 ---
 
-# Other MCP Servers For Android Reverse Engineering
+# Zin MCP Suie
  - **[APKTool-MCP-Server](https://github.com/zinja-coder/apktool-mcp-server)**
-
+ - **[JAD-AI-MCP-Plugin](https://github.com/zinja-coder/jadx-ai-mcp)**
+ - **[ZIN-MCP-Client](https://github.com/zinja-coder/zin-mcp-client)**
 
 ## Current MCP Tools
 
@@ -72,6 +88,9 @@ The following MCP tools are available:
 - `get_main_application_classes_code()` — Fetch all the main application classes' code based on the package name defined in the AndroidManifest.xml.
 - `get_main_application_classes_names()` — Fetch all the main application classes' names based on the package name defined in the AndroidManifest.xml.
 - `get_android_manifest()` — Retrieve and return the AndroidManifest.xml content.
+- `get_strings()` : Fetches the strings.xml file
+- `get_all_resource_file_names()` : Retrieve all resource files names that exists in application
+- `get_resource_file()` : Retrieve resource file content  
 
 ---
 
@@ -136,6 +155,22 @@ The following MCP tools are available:
 
 [READ HERE](https://github.com/zinja-coder/jadx-ai-mcp?tab=readme-ov-file#%EF%B8%8F-getting-started)
 
+## Running on Local LLM Using Ollama and Zin MCP Client - Recommended
+
+<div align="center">
+    <a href="https://github.com/zinja-coder/zin-mcp-client">
+    <img alt="zin-mcp-client" height="360px" widht="480px" src="https://github.com/user-attachments/assets/0e8e0ecd-0520-422e-a007-03dc62c4118e">
+    </a>
+</div>
+
+⚡ Lightweight, Fast, Simple, CLI-Based MCP Client for STDIO MCP Servers, to fill the gap and provide bridge between your local LLMs running Ollama and MCP Servers.
+
+Check Now: https://github.com/zinja-coder/zin-mcp-client
+
+Demo: **Perform Code Review to Find Vulnerabilities locally**
+
+https://github.com/user-attachments/assets/4cd26715-b5e6-4b4b-95e4-054de6789f42
+
 ## 🛣️ Future Roadmap
 
 - [x] Add Support for apktool
@@ -158,7 +193,6 @@ The following MCP tools are available:
 
  - The files related to **jadx-mcp-server** can be found in this repository only.
 
-
 ## 🙏 Credits
 
 This project is a plugin for JADX, an amazing open-source Android decompiler created and maintained by [@skylot](https://github.com/skylot). All core decompilation logic belongs to them. I have only extended it to support my MCP server with AI capabilities.
@@ -173,6 +207,13 @@ Also huge thanks to [@aaddrick](https://github.com/aaddrick) for developing Clau
 
 And in last thanks to [@anthropics](https://github.com/anthropics) for developing the Model Context Protocol and [@FastMCP](https://github.com/modelcontextprotocol/python-sdk) team
 
+And all opensource maintainers and contributors that makes libraries and dependencies which allows project like this possible.
+
+## Audited and Received Assessment Badge
+
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/zinja-coder-jadx-mcp-server-badge.png)](https://mseep.ai/app/zinja-coder-jadx-mcp-server)
+
+Thank you Mseep.net for auditing and providing Assessment Badge.
 
 ## 📄 License
 
